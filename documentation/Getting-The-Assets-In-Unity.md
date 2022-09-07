@@ -11,7 +11,7 @@ Download the latest version of AssetRipper from their GitHub repository at [http
 
 Extract the zipfile and open AssetRipper.exe.
 
-Leave all the settings on default except for `Script Export Format` and `Script Content Level`, these should respectively be set to `Dll Export Without Renaming` and `Level 3`
+Leave all the settings on default except for `Script Export Format` and `Script Content Level`, these should respectively be set to `Dll Export Without Renaming` and `Level 2`
 
 Then drag and drop your game folder (The whole folder called `Core Keeper`) into AssetRipper. 
 
@@ -109,19 +109,18 @@ Find the temp folder in where you placed the MonoScripts from earlier. Copy past
 - `Assembly-CSharp`) 
 
 back into `Assets/MonoScript`.
-
-Look into the instructions in `# Utilities-and-helpful-tools` to fix the missing script references.
+Make sure that while you are doing this Unity is RUNNING. Otherwise it will crash!
 
 ## Step 6: Restart Unity
 
-Go out of Safe Mode and restart Unity once more to fully get the project assembled.
-
+Restart Unity to fully get the project assembled.
 
 ## Step 7: Profit
 
 You should now be able to see the assets in the Unity editor.
 
-Enjoy and make some cool stuff.
+Enjoy and make some cool stuff. 
+Look into the instructions in `# Utilities-and-helpful-tools` to fix the missing script references.
 
 
 ## Utilities and helpful tools
