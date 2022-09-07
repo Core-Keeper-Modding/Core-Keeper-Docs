@@ -3,6 +3,7 @@
 ## Home
 
 * [Core Keeper Modding Wiki](README.md)
+  * [Discord](https://discord.gg/QxvYsd79EU)
 * [How-To-Contribute](home/how-to-contribute.md)
 
 ## Modding
