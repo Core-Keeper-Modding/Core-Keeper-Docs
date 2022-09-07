@@ -1,2 +1,3 @@
-# Core Keeper Docs
-This repo contains information on how to get started with modding Core Keeper
+# Core Keeper Modding Wiki
+Welcome to the Core Keeper Modding wiki.
+Check the links in the sidebar to get started with modding this amazing game!
