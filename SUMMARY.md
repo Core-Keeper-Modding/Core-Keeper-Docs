@@ -1,15 +1,13 @@
 # Table of contents
 
-## Home
-
 * [Core Keeper modding wiki](README.md)
-* [How to contribute](home/how-to-contribute.md)
+  * [How to contribute](home/how-to-contribute.md)
 
 ## Modding
 
-* [Getting started with modding](modding/getting-started-with-modding.md)
-* [How to view game source code](modding/how-to-view-game-source-code.md)
-* [How do I view the game's assets in unity?](modding/getting-the-assets-in-unity.md)
+* [Getting started with modding](modding/getting-started.md)
+* [How to view game source code](modding/view-source-code.md)
+* [How do I view the game's assets in unity?](modding/unity-setup.md)
 * [Reference](modding/reference.md)
 
 ## Concepts
