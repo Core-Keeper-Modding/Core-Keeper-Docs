@@ -1,4 +1,4 @@
-# How-To-Contribute
+# 🫂 How to contribute
 
 This wiki is an accumulation of the work of several people. To keep this wiki in the best state possible we ask of you to contribute wherever you think possible.
 

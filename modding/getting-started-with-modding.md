@@ -1,4 +1,4 @@
-# Getting-Started-With-Modding
+# Getting started with modding
 
 ## First Steps
 
