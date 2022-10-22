@@ -81,6 +81,8 @@ Save `manifest.json` and go back into project root.
 
 Move all the files in the `Assets/MonoScript` folder to somewhere safe and make sure the folder is empty.
 
+Note: `MonoScript` could be called differently. Devs of Asset Ripper change it's name all the time. If you can't see it, look for a folder with `.dll` files in it.
+
 ## Step 3: Installing The right Unity version.
 
 Install Unity version `2020.3.25f1` from the Unity Download Archive: [https://unity3d.com/get-unity/download/archive](https://unity3d.com/get-unity/download/archive).
