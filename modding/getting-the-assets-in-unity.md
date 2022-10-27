@@ -77,7 +77,7 @@ Create a new file with the name `manifest.json` in the `Packages` folder and pas
 }
 ```
 
-Save `manifest.json` and go back into project root.
+Save `manifest.json` and go back into project root. Make sure that you have git installed and it's executable is in your PATH environment variable. After installing git make sure to close Unity and Unity hub completely!
 
 Move all the files in the `Assets/MonoScript` folder to somewhere safe and make sure the folder is empty.
 
