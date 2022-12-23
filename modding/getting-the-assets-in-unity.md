@@ -18,13 +18,13 @@ Leave all the settings on default except for `Script Export Format` and `Script 
 
 Then drag and drop your game folder (The whole folder called `Core Keeper`) into AssetRipper.
 
-Wait until AssetRipper is done loading the game content and then click on `Export > Export all files` in the left upper corner.
+Wait until AssetRipper is done loading the game content and then click on `Export > Export all files` in the left upper corner, and select a temporary folder.
 
-You should now have a folder with all the assets of the game.
+You should now have a folder with all the assets of the game. It is recommended to copy this to your "projects" folder. The folder you need should have `Assets` folder in it. You can also rename this folder to your liking.
 
 ## Step 2: Preparing the folder for Unity
 
-Go into the folder in the project root (called `ExportedProject`) and open folder with the name `Packages`.
+Go into the folder in the project root and open folder with the name `Packages`.
 
 Create or open file with the name `manifest.json` in the `Packages` folder and paste this into the file:
 
