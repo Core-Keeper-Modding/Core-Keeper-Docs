@@ -1,7 +1,7 @@
 # Table of contents
 
 * [🏠 Home](README.md)
-  * [🫂 How to contribute](home/how-to-contribute.md)
+* [🫂 How to contribute](how-to-contribute.md)
 
 ## Modding
 
