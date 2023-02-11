@@ -134,11 +134,11 @@ In your project settings change URP rendering asset from PugRP to one in the Edi
 
 Optionally you can run `Window->Core Keeper Tools->Fix shaders` tool. It will try to replace dummy shaders with better default shader implementation.&#x20;
 
-## Step 6: Restart Unity
+## Step 7: Restart Unity
 
 Restart Unity to fully get the project assembled.
 
-## Step 7: Profit
+## Step 8: Profit
 
 You should now be able to see the assets in the Unity editor.
 
