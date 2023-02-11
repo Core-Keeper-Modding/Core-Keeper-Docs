@@ -2,11 +2,21 @@
 
 This page provides a way to get a glimpse of the assets used in the game and even load them into Unity!
 
-## Update Warning
+## Unity Project Instability Warning
+
+Currently this guide will produce semi functional Unity project. You will be able to view and edit game assets, however you won't be able to pack an asset bundle due to a crash, cause of which I have not determined yet.
+
+## Quality of Love Update Warning
+
+With the release of Quality of Love update devs have changed Unity version to `2021.3.24` and switched to Universal Rendering Pipeline. Both of these changes complicate Unity project setup.
+
+## Desert Update Warning
 
 With the release of the Desert update devs have changed Unity version to `2020.3.37` and also have refactored their assemblies. These changes will heavily break existing setups.
 
-As such if you have setup Unity project before, I **HIGHLY** recommend to back it up, and start from scratch. After you setup the project from scratch you will need NG Tools Missing Script Recovery tool to fix scripts in your assets.
+### Backup your project
+
+If you have setup Unity project before and there was Unity version update, I **HIGHLY** recommend to back it up, and start from scratch. After you setup the project from scratch you will need NG Tools Missing Script Recovery tool to fix scripts in your assets.
 
 ## Step 1: AssetRipper
 
@@ -43,10 +53,12 @@ Create or open file with the name `manifest.json` in the `Packages` folder and p
     "com.unity.platforms": "0.10.0-preview.10",
     "com.unity.postprocessing": "3.2.1",
     "com.unity.profiling.core": "1.0.2",
+    "com.unity.render-pipelines.universal": "12.1.8",
     "com.unity.rendering.hybrid": "0.51.1-preview.21",
+    "com.unity.scriptablebuildpipeline": "https://github.com/kremnev8/ModifiedCoreKeeperPackages.git?path=/com.unity.scriptablebuildpipeline@1.19.2",
+    "com.unity.shadergraph": "https://github.com/kremnev8/ModifiedCoreKeeperPackages.git?path=/com.unity.shadergraph@12.1.8",
     "com.unity.test-framework": "1.1.29",
     "com.unity.textmeshpro": "https://github.com/kremnev8/ModifiedCoreKeeperPackages.git?path=/com.unity.textmeshpro@3.0.6",
-    "com.unity.scriptablebuildpipeline": "https://github.com/kremnev8/ModifiedCoreKeeperPackages.git?path=/com.unity.scriptablebuildpipeline@1.19.2",
     "com.unity.ugui": "1.0.0",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
@@ -91,7 +103,7 @@ Note: `Plugins` could be called differently. Devs of Asset Ripper change it's na
 
 ## Step 3: Installing The right Unity version.
 
-Install Unity version `2020.3.37f1` from the Unity Download Archive: [https://unity3d.com/get-unity/download/archive](https://unity3d.com/get-unity/download/archive).
+Install Unity version `2021.3.14f1` from the Unity Download Archive: [https://unity3d.com/get-unity/download/archive](https://unity3d.com/get-unity/download/archive).
 
 Go through the standard Unity installation and wait until it's done.
 
@@ -99,7 +111,7 @@ Go through the standard Unity installation and wait until it's done.
 
 Open the Unity hub and select the folder you created when exporting the AssetRipper files.
 
-Open the project with Unity version `2020.3.37f1` and wait for it to load. This can take a while.
+Open the project with Unity version `2021.3.14f1` and wait for it to load. This can take a while.
 
 ## Step 5: Adding Script Assemblies
 
@@ -114,6 +126,14 @@ back into `Assets/MonoScript`.&#x20;
 
 Make sure that you are doing this while Unity is **RUNNING**. Otherwise it will crash!
 
+## Step 6: Adding Editor Kit
+
+Download Editor Kit package from github: [https://github.com/Jrprogrammer/CoreLib/releases](https://github.com/Jrprogrammer/CoreLib/releases) and place it's contents in the assets folder.
+
+In your project settings change URP rendering asset from PugRP to one in the Editor Kit package.
+
+Optionally you can run `Window->Core Keeper Tools->Fix shaders` tool. It will try to replace dummy shaders with better default shader implementation.&#x20;
+
 ## Step 6: Restart Unity
 
 Restart Unity to fully get the project assembled.
@@ -126,6 +146,4 @@ Enjoy and make some cool stuff.&#x20;
 
 ## Utilities and helpful tools
 
-Due to switching Unity.Physics assembly, there will be missing script references. [This tool](https://assetstore.unity.com/packages/tools/utilities/ng-missing-script-recovery-102272) will help with the missing script references.
-
-When using CoreLib library you can add an Editor Kit to your project. This kit will add custom component dummies and also useful editor extensions.
+There might be missing script references. [This tool](https://assetstore.unity.com/packages/tools/utilities/ng-missing-script-recovery-102272) will help with the missing script references.
