@@ -2,10 +2,6 @@
 
 This page provides a way to get a glimpse of the assets used in the game and even load them into Unity!
 
-## Unity Project Instability Warning
-
-Currently this guide will produce semi functional Unity project. You will be able to view and edit game assets, however you won't be able to pack an asset bundle due to a crash, cause of which I have not determined yet.
-
 ## Quality of Love Update Warning
 
 With the release of Quality of Love update devs have changed Unity version to `2021.3.24` and switched to Universal Rendering Pipeline. Both of these changes complicate Unity project setup.
@@ -14,7 +10,7 @@ With the release of Quality of Love update devs have changed Unity version to `2
 
 With the release of the Desert update devs have changed Unity version to `2020.3.37` and also have refactored their assemblies. These changes will heavily break existing setups.
 
-### Backup your project
+## Backup your project
 
 If you have setup Unity project before and there was Unity version update, I **HIGHLY** recommend to back it up, and start from scratch. After you setup the project from scratch you will need NG Tools Missing Script Recovery tool to fix scripts in your assets.
 
@@ -33,6 +29,8 @@ Wait until AssetRipper is done loading the game content and then click on `Expor
 You should now have a folder with all the assets of the game. It is recommended to copy this to your "projects" folder. The folder you need should have `Assets` folder in it. You can also rename this folder to your liking.
 
 ## Step 2: Preparing the folder for Unity
+
+### Set up project manifest
 
 Go into the folder in the project root and open folder with the name `Packages`.
 
@@ -97,9 +95,15 @@ Create or open file with the name `manifest.json` in the `Packages` folder and p
 
 Save `manifest.json` and go back into project root. Make sure that you have git installed and it's executable is in your PATH environment variable. After installing git make sure to close Unity and Unity hub completely!
 
+### Move game assemblies
+
 Move all the files in the `Assets/Plugins` folder to somewhere safe and make sure the folder is empty.
 
 Note: `Plugins` could be called differently. Devs of Asset Ripper change it's name all the time. If you can't see it, look for a folder in `Assets` folder with `.dll` files in it.
+
+### Delete project settings
+
+To prevent your project from crashing go to `ProjectSettings` folder and delete file named `ProjectSettings.asset`. This file seems to contain some broken settings, so deleting it fixes the issue
 
 ## Step 3: Installing The right Unity version.
 
@@ -131,8 +135,6 @@ Make sure that you are doing this while Unity is **RUNNING**. Otherwise it will 
 Download Editor Kit package from github: [https://github.com/Jrprogrammer/CoreLib/releases](https://github.com/Jrprogrammer/CoreLib/releases) and place it's contents in the assets folder.
 
 In your project settings change URP rendering asset from PugRP to one in the Editor Kit package.
-
-Optionally you can run `Window->Core Keeper Tools->Fix shaders` tool. It will try to replace dummy shaders with better default shader implementation.&#x20;
 
 ## Step 7: Restart Unity
 
