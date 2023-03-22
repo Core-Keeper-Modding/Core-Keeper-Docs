@@ -1,20 +1,41 @@
 # Getting started with modding
 
-## First Steps
+## To start
 
-The best way to get started with modding Core Keeper is to follow the guides from a few crucial libraries and tools. This section provides a background to the libraries/tools and links to the guides.
+To start modding this game follow these steps. This guide assumes you know C# language and familiar with it's tools.&#x20;
+
+1. Install `Visual Studio` or `Jet Brains Rider` IDE. Both of these will work fine, however I personally would recommend Rider as its much better if you can get it.
+2. Follow [BepInEx staring guide](https://docs.bepinex.dev/master/articles/dev\_guide/plugin\_tutorial/index.html) to setup your basic .NET project
+3. Install DnSpy and [setup source viewing](how-to-view-game-source-code.md)
+4. Make sure to use [CoreLib](https://github.com/Jrprogrammer/CoreLib) in your mod. It will make adding custom content easier
+5. If you intent to make custom blocks, enemies, etc follow [Unity project setup guide](getting-the-assets-in-unity.md)
+
+Also below you can find the list of commonly used libraries and tools.
 
 ## Libraries
 
 ### BepInEx
 
-BepInEx is a plugin framework for Unity and .NET framework games. We use BepInEx to load the mods into the game. It provides a [good guide](https://docs.bepinex.dev/master/articles/dev\_guide/plugin\_tutorial/index.html) to get started with BepInEx and by the end of the guide you should have made your very first working mod!
+BepInEx is a plugin framework for Unity and .NET framework games. We use BepInEx to load the mods into the game.
 
 Be sure to select the IL2CPP code examples when you're creating your mod!
 
 **Link:** [https://docs.bepinex.dev/master/articles/user\_guide/installation/index.html](https://docs.bepinex.dev/master/articles/user\_guide/installation/index.html)
 
 **Download the latest IL2CPP build here**: [https://builds.bepinex.dev/projects/bepinex\_be](https://builds.bepinex.dev/projects/bepinex\_be)
+
+### CoreLib
+
+CoreLib is a modding library made specifically for Core Keeper. It provides a lot of features that make it easier creating your mods. This includes, but not limited to:
+
+* Custom items, blocks, enemies, NPC, etc.
+* Adding items using JSON
+* Easier access to Rewired input system, localization
+* Custom chat commands
+
+To use it in your mods just add the [NuGet](https://www.nuget.org/packages/CoreKeeper.Modding.CoreLib/) to your project references
+
+**Link:** [**https://github.com/Jrprogrammer/CoreLib**](https://github.com/Jrprogrammer/CoreLib)****
 
 ### Harmony
 
