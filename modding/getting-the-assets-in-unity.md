@@ -1,6 +1,6 @@
-# How do I view the game's assets in unity?
+# How to setup your Unity project
 
-This page provides a way to get a glimpse of the assets used in the game and even load them into Unity!
+This guide provides step by step guide on how to setup your Unity project to create custom assets or view game assets
 
 ## Quality of Love Update Warning
 
@@ -14,11 +14,61 @@ With the release of the Desert update devs have changed Unity version to `2020.3
 
 If you have setup Unity project before and there was Unity version update, I **HIGHLY** recommend to back it up, and start from scratch. After you setup the project from scratch you will need NG Tools Missing Script Recovery tool to fix scripts in your assets.
 
-## Step 1: AssetRipper
+## ThunderKit based Guide
+
+With release of the mono build of the game it is now possible to use ThunderKit to setup our Unity project.
+
+## Step 1: Install Unity
+
+Install Unity Hub from [https://unity.com/download](https://unity.com/download)
+
+Install Unity version `2021.3.14f1` from the Unity Download Archive: [https://unity3d.com/get-unity/download/archive](https://unity3d.com/get-unity/download/archive) using Unity Hub
+
+Go through the standard Unity installation and wait until it's done.
+
+Make sure that you have git installed and it's executable is in your PATH environment variable. After installing git make sure to close Unity and Unity hub completely!
+
+## Step 2: Install Mono version of Core Keeper
+
+Install [Core Keeper mono version](how-to-install-core-keeper-mono-version.md)
+
+## Step 3: Setup the project
+
+### Create a new project
+
+Create a new project from 2D Core template using Unity Hub. Wait until project is created and imported.
+
+### Install ThunderKit
+
+Now in the menu bar click on `Window/Package Manager`. A window will appear. In the top left corner click install button, select `add package from git URL` and paste in this link: `https://github.com/kremnev8/ThunderKit.git#master`
+
+Wait for ThunderKit to be installed
+
+### Install Core Keeper Import Extensions
+
+In the menu bar go to `Tools/ThunderKit/Packages`. Now install `Core Keeper Import Extensions` package.&#x20;
+
+Once it is installed in the ThunderKit settings tab `Import Configuration`. You should see a bunch of new importers.
+
+### Import game assemblies
+
+In ThunderKit settings tab `ThunderKit Settings`. Click on the `Browse` button. Select the executable of your Mono Core Keeper. Now click on the `Import` button
+
+This step might take a while to complete. Once it's done, you will be asked to restart Unity, click `Restart Project`
+
+## Optional steps
+
+At this point your project is functional. You can create custom assets and export them. Next steps are optional.
+
+## Add game assets to your project
+
+### Install Asset Ripper
 
 Download the latest version of AssetRipper from their GitHub repository at [https://github.com/AssetRipper/AssetRipper](https://github.com/AssetRipper/AssetRipper). The name is pretty descriptive of what it does.
 
 Extract the zipfile and open AssetRipper.exe.
+
+### Extract Assets
 
 Leave all the settings on default except for `Script Export Format` and `Script Content Level`, these should respectively be set to `Dll Export Without Renaming` and `Level 2`
 
@@ -26,126 +76,20 @@ Then drag and drop your game folder (The whole folder called `Core Keeper`) into
 
 Wait until AssetRipper is done loading the game content and then click on `Export > Export all files` in the left upper corner, and select a temporary folder.
 
-You should now have a folder with all the assets of the game. It is recommended to copy this to your "projects" folder. The folder you need should have `Assets` folder in it. You can also rename this folder to your liking.
+You should now have a folder with all the assets of the game.
 
-## Step 2: Preparing the folder for Unity
+### Move Assets
 
-### Set up project manifest
+In the extracted folder look for `Assets` folder. From it you want every folder APART from `Plugins`.&#x20;
 
-Go into the folder in the project root and open folder with the name `Packages`.
+In your project `Assets` folder create a folder to house these assets, for example `Core Keeper` and move all files from exported `Assets` there.
 
-Create or open file with the name `manifest.json` in the `Packages` folder and paste this into the file:
+Now Unity will start to import these. This will take a while to complete.
 
-```json
-{
-  "dependencies": {
-    "com.unity.2d.sprite": "https://github.com/kremnev8/ModifiedCoreKeeperPackages.git?path=/com.unity.2d.sprite@1.0.0",
-    "com.unity.assetbundlebrowser": "1.7.0",
-    "com.unity.entities": "https://github.com/kremnev8/ModifiedCoreKeeperPackages.git?path=/com.unity.entities@0.51.1-preview.21",
-    "com.unity.ide.rider": "2.0.7",
-    "com.unity.ide.visualstudio": "2.0.16",
-    "com.unity.ide.vscode": "1.2.5",
-    "com.unity.netcode": "0.51.1-preview.21",
-    "com.unity.performance.profile-analyzer": "1.1.1",
-    "com.unity.physics": "https://github.com/kremnev8/ModifiedCoreKeeperPackages.git?path=/com.unity.physics@0.51.1-preview.21",
-    "com.unity.platforms": "0.10.0-preview.10",
-    "com.unity.postprocessing": "3.2.1",
-    "com.unity.profiling.core": "1.0.2",
-    "com.unity.render-pipelines.universal": "12.1.8",
-    "com.unity.rendering.hybrid": "0.51.1-preview.21",
-    "com.unity.scriptablebuildpipeline": "https://github.com/kremnev8/ModifiedCoreKeeperPackages.git?path=/com.unity.scriptablebuildpipeline@1.19.2",
-    "com.unity.shadergraph": "https://github.com/kremnev8/ModifiedCoreKeeperPackages.git?path=/com.unity.shadergraph@12.1.8",
-    "com.unity.test-framework": "1.1.29",
-    "com.unity.textmeshpro": "https://github.com/kremnev8/ModifiedCoreKeeperPackages.git?path=/com.unity.textmeshpro@3.0.6",
-    "com.unity.ugui": "1.0.0",
-    "com.unity.modules.ai": "1.0.0",
-    "com.unity.modules.androidjni": "1.0.0",
-    "com.unity.modules.animation": "1.0.0",
-    "com.unity.modules.assetbundle": "1.0.0",
-    "com.unity.modules.audio": "1.0.0",
-    "com.unity.modules.cloth": "1.0.0",
-    "com.unity.modules.director": "1.0.0",
-    "com.unity.modules.imageconversion": "1.0.0",
-    "com.unity.modules.imgui": "1.0.0",
-    "com.unity.modules.jsonserialize": "1.0.0",
-    "com.unity.modules.particlesystem": "1.0.0",
-    "com.unity.modules.physics": "1.0.0",
-    "com.unity.modules.physics2d": "1.0.0",
-    "com.unity.modules.screencapture": "1.0.0",
-    "com.unity.modules.terrain": "1.0.0",
-    "com.unity.modules.terrainphysics": "1.0.0",
-    "com.unity.modules.tilemap": "1.0.0",
-    "com.unity.modules.ui": "1.0.0",
-    "com.unity.modules.uielements": "1.0.0",
-    "com.unity.modules.umbra": "1.0.0",
-    "com.unity.modules.unityanalytics": "1.0.0",
-    "com.unity.modules.unitywebrequest": "1.0.0",
-    "com.unity.modules.unitywebrequestassetbundle": "1.0.0",
-    "com.unity.modules.unitywebrequestaudio": "1.0.0",
-    "com.unity.modules.unitywebrequesttexture": "1.0.0",
-    "com.unity.modules.unitywebrequestwww": "1.0.0",
-    "com.unity.modules.vehicles": "1.0.0",
-    "com.unity.modules.video": "1.0.0",
-    "com.unity.modules.vr": "1.0.0",
-    "com.unity.modules.wind": "1.0.0",
-    "com.unity.modules.xr": "1.0.0"
-  }
-}
-```
-
-Save `manifest.json` and go back into project root. Make sure that you have git installed and it's executable is in your PATH environment variable. After installing git make sure to close Unity and Unity hub completely!
-
-### Move game assemblies
-
-Move all the files in the `Assets/Plugins` folder to somewhere safe and make sure the folder is empty.
-
-Note: `Plugins` could be called differently. Devs of Asset Ripper change it's name all the time. If you can't see it, look for a folder in `Assets` folder with `.dll` files in it.
-
-### Delete project settings
-
-To prevent your project from crashing go to `ProjectSettings` folder and delete file named `ProjectSettings.asset`. This file seems to contain some broken settings, so deleting it fixes the issue
-
-## Step 3: Installing The right Unity version.
-
-Install Unity version `2021.3.14f1` from the Unity Download Archive: [https://unity3d.com/get-unity/download/archive](https://unity3d.com/get-unity/download/archive).
-
-Go through the standard Unity installation and wait until it's done.
-
-## Step 4: Opening the project.
-
-Open the Unity hub and select the folder you created when exporting the AssetRipper files.
-
-Open the project with Unity version `2021.3.14f1` and wait for it to load. This can take a while.
-
-## Step 5: Adding Script Assemblies
-
-Find the temp folder in where you placed files from Plugins folder earlier. Copy paste all contents from the script **EXCEPT** the following:
-
-* All Unity assemblies which start with `Unity.` (errors will occur due to duplicate assemblies if these are pasted in)
-* `Assembly-CSharp`
-
-back into `Assets/MonoScript`.&#x20;
-
-**Note:** keep assemblies with `Sentry` in the name, even if they have `Unity` in the name
-
-Make sure that you are doing this while Unity is **RUNNING**. Otherwise it will crash!
-
-## Step 6: Adding Editor Kit
-
-Download Editor Kit package from github: [https://github.com/Jrprogrammer/CoreLib/releases](https://github.com/Jrprogrammer/CoreLib/releases) and place it's contents in the assets folder.
-
-In your project settings change URP rendering asset from PugRP to one in the Editor Kit package.
-
-## Step 7: Restart Unity
-
-Restart Unity to fully get the project assembled.
-
-## Step 8: Profit
-
-You should now be able to see the assets in the Unity editor.
-
-Enjoy and make some cool stuff.&#x20;
-
-## Utilities and helpful tools
+## Other Utilities
 
 There might be missing script references. [This tool](https://assetstore.unity.com/packages/tools/utilities/ng-missing-script-recovery-102272) will help with the missing script references.
+
+## Old (Legacy) Guide
+
+Previous version of this guide can be found [here](../archive/old-unity-guide.md)

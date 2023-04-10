@@ -35,7 +35,7 @@ CoreLib is a modding library made specifically for Core Keeper. It provides a lo
 
 To use it in your mods just add the [NuGet](https://www.nuget.org/packages/CoreKeeper.Modding.CoreLib/) to your project references
 
-**Link:** [**https://github.com/Jrprogrammer/CoreLib**](https://github.com/Jrprogrammer/CoreLib)****
+**Link:** [**https://github.com/Jrprogrammer/CoreLib**](https://github.com/Jrprogrammer/CoreLib)
 
 ### Harmony
 

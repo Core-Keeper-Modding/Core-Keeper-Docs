@@ -6,15 +6,8 @@ Because this game was made using Il2Cpp backend, tools like DnSpy won't give you
 
 With the release of Mono build, viewing source code becomes much easier. Now you can use DnSpy on a specially built version of Core Keeper. To set this up follow these steps:
 
-1. Right-click the game's name in Steam and select `Properties` from the menu
-2. Select `Betas`
-3. Enter the following password: `monobuildsmightnotbeuptodate`
-4. Click `Check Code`&#x20;
-5. Click the dropdown menu, select the mono branch, and click `opt in`
-6. Wait for the game to automatically update (or manually update it yourself)
-7. Using DnSpy navigate to the game's asseblies, which can be found in `<game path>/CoreKeeper_Data/Managed` folder
-
-If you wish to have both the mono build and il2cpp one use steamcmd to install and update the mono build. Follow this [guide](https://steamcommunity.com/sharedfiles/filedetails/?id=388264242), replacing values for Core Keeper. Core Keeper appId is `1621690`
+1. Install [Mono Core Keeper](how-to-install-core-keeper-mono-version.md)
+2. Using DnSpy navigate to the game's asseblies, which can be found in `<game path>/CoreKeeper_Data/Managed` folder
 
 ## Using Cpp2IL
 
