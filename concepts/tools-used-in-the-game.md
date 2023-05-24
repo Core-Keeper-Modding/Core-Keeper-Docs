@@ -24,7 +24,7 @@ Components are structs, which hold component data. However they don't hold any b
 
 Systems hold the actual behavior. They can perform operations of group of components in bulk, utilizing Job Systems and Burst to do so in multi-threaded way
 
-If you are struggling to understand ECS, try [this info-graphic](https://docs.unity3d.com/Packages/com.unity.entities@0.17/manual/index.html) or [this video](https://www.youtube.com/watch?v=71RSWVyOMEY).
+If you are struggling to understand ECS, try [this info-graphic](https://www.reddit.com/r/Unity3D/comments/y6elrw/what\_is\_ecs\_an\_infographic\_to\_understand\_the/) or [this video](https://www.youtube.com/watch?v=71RSWVyOMEY).
 
 #### Authoring
 
