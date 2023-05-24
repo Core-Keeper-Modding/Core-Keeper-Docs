@@ -24,6 +24,8 @@ Components are structs, which hold component data. However they don't hold any b
 
 Systems hold the actual behavior. They can perform operations of group of components in bulk, utilizing Job Systems and Burst to do so in multi-threaded way
 
+If you are struggling to understand ECS, try [this info-graphic](https://docs.unity3d.com/Packages/com.unity.entities@0.17/manual/index.html) or [this video](https://www.youtube.com/watch?v=71RSWVyOMEY).
+
 #### Authoring
 
 When making the game and it's prefabs, devs are using Hybrid system, which allows to **author** the content using typical game objects and MonoBehavior based components.
