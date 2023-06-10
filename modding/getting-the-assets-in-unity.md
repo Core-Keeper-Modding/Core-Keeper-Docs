@@ -4,7 +4,7 @@ This guide provides step by step guide on how to setup your Unity project to cre
 
 ## Quality of Love Update Warning
 
-With the release of Quality of Love update devs have changed Unity version to `2021.3.24` and switched to Universal Rendering Pipeline. Both of these changes complicate Unity project setup.
+With the release of Quality of Love update devs have changed Unity version to `2021.3.14` and switched to Universal Rendering Pipeline. Both of these changes complicate Unity project setup.
 
 ## Desert Update Warning
 
