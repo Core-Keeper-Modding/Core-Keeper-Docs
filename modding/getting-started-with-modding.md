@@ -1,5 +1,9 @@
 # Getting started with modding
 
+## Guide Deprecated
+
+This guide was made for IL2CPP version of Core Keeper and no longer applies. Please refer to: [https://mod.io/g/corekeeper/r/core-keeper-mod-sdk-introduction](https://mod.io/g/corekeeper/r/core-keeper-mod-sdk-introduction)
+
 ## To start
 
 To start modding this game follow these steps. This guide assumes you know C# language and familiar with it's tools.&#x20;

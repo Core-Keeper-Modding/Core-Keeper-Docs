@@ -1,15 +1,16 @@
 # How to view game source code
 
-Because this game was made using Il2Cpp backend, tools like DnSpy won't give you access to the source code. There are three ways to view source code: Mono build, Cpp2Il and Ghidra
+You can use DnSpy to view game code. To set this up follow these steps:
 
-## Using Mono build of the game
-
-With the release of Mono build, viewing source code becomes much easier. Now you can use DnSpy on a specially built version of Core Keeper. To set this up follow these steps:
-
-1. Install [Mono Core Keeper](how-to-install-core-keeper-mono-version.md)
-2. Using DnSpy navigate to the game's asseblies, which can be found in `<game path>/CoreKeeper_Data/Managed` folder
+1. Using DnSpy navigate to the game's asseblies, which can be found in `<game path>/CoreKeeper_Data/Managed` folder
 
 ## Using Cpp2IL
+
+### Guide Deprecated
+
+This guide was made for IL2CPP version of Core Keeper and no longer applies. Please refer to: [https://mod.io/g/corekeeper/r/core-keeper-mod-sdk-introduction](https://mod.io/g/corekeeper/r/core-keeper-mod-sdk-introduction)
+
+
 
 [Cpp2Il](https://github.com/SamboyCoding/Cpp2IL) can generate .NET assemblies which can be open with DnSpy.
 
@@ -23,6 +24,12 @@ Note that the source code is divided into three assemblies (`Pug.Core`, `Pug.Oth
 After running the tool you will see new folder `cpp2il_out`. You can now use DnSpy to read the source code.
 
 ## Using Ghidra / IDA
+
+### Guide Deprecated
+
+This guide was made for IL2CPP version of Core Keeper and no longer applies. Please refer to: [https://mod.io/g/corekeeper/r/core-keeper-mod-sdk-introduction](https://mod.io/g/corekeeper/r/core-keeper-mod-sdk-introduction)
+
+
 
 Using a binary reverse engineering tool we can get more precise output. You can use both Ghidra and IDA for this, but since Ghidra is free this guide will be focused on it.
 

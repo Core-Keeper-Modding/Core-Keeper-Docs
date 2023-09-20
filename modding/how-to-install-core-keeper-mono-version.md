@@ -6,6 +6,10 @@ description: >-
 
 # How to install Core Keeper mono version
 
+## Guide Deprecated
+
+This guide was made for IL2CPP version of Core Keeper and no longer applies. Normal build of the game already uses mono
+
 ## Steps
 
 * Right-click the game's name in Steam and select `Properties` from the menu

@@ -1,5 +1,9 @@
 # How to setup your Unity project
 
+## Guide Deprecated
+
+This guide was made for IL2CPP version of Core Keeper and no longer applies. Please refer to: [https://mod.io/g/corekeeper/r/core-keeper-mod-sdk-introduction](https://mod.io/g/corekeeper/r/core-keeper-mod-sdk-introduction)
+
 This guide provides step by step guide on how to setup your Unity project to create custom assets or view game assets
 
 ## Quality of Love Update Warning

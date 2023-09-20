@@ -1,12 +1,6 @@
 # Tools used in the game
 
-This game is using a few tools that are important to understand while modding. Specifically these are Il2Cpp, DOTS, ECS, Jobs system and Burst
-
-## Il2Cpp
-
-Il2Cpp is a build backed for Unity Engine. It performs a conversion of the game code (Written in C#) to cpp. Then using special library called libil2cpp it compiles the game code to native binary.&#x20;
-
-When Unity compiles for Il2Cpp it also performs heavy stripping and anything that devs did not use can and will be stripped. This is especially true for generic types and methods which use structs.
+This game is using a few tools that are important to understand while modding. Specifically these are DOTS, ECS, Jobs system and Burst
 
 ## DOTS
 
