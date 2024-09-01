@@ -56,3 +56,7 @@ Unfortunately currently we are not able to patch Burst compiled methods.
 
 ## Ghosts / Ghost Authoring
 
+Ghosts part of the multiplayer client/server communication system. A ghost is a networked object that the server simulates. Read more on the Unity docs.
+
+{% embed url="https://docs.unity3d.com/Packages/com.unity.netcode@1.0/manual/ghost-snapshots.html" %}
+
