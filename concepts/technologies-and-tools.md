@@ -2,6 +2,20 @@
 
 This game is using a few tools that are important to understand while modding. Specifically these are DOTS, ECS, Jobs system and Burst
 
+## Unity concepts
+
+### Game Object
+
+Game Object represents anything which can exist in a **Scene**. Please note that in Core Keeper only graphical prefabs and UI uses Game Objects at runtime. Players, placeables and enemies are NOT Game Objects, they are ECS Entities.
+
+### Mono Behaviour
+
+Mono Behaviour is a class that can be attached to Game Objects. This component can give Game Objects behaviour.
+
+### Scriptable Object
+
+A data container that you can use to save large amounts of data. Scriptable objects live outside of scenes and can be accessed by any code. In this game many lookup tables are stored as Scriptable Objects. Another notable Scriptable object are Sprite Assets.
+
 ## DOTS
 
 **Data-Oriented Technology Stack** (DOTS) is a feature of Unity, which is currently in pre release. It uses completely different way of thinking about game state than usual Game Object based approach.&#x20;

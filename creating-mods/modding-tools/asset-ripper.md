@@ -27,5 +27,9 @@ After importing the assets you'll have to use the [Missing Script Recovery Tool]
 
 ### Navigating Exported Files
 
-* Textures can be found in `<export folder>\ExportedProject\Assets\Texture2D`
+`ExportedProject` folder contains all files we're interested in. Next section references paths relative to it.
+
+* Textures can be found in `Assets\Texture2D`. Their respective sprites can be found in `Assets\Sprite`
+* Item and Entity prefabs can be found in `Assets\PrefabInstance`. These very likely will have missing scripts when you put them in Mod SDK. To fix these, use [script recovery tool](ng-tools-missing-script-recovery.md). If a script has no fields use [Unity Explorer](unity-explorer.md) to inspect the prefab ingame
+* Sprite Assets can be found in `Assets\MonoBehaviour`, along with some other [Scriptable Objects](../../concepts/technologies-and-tools.md#scriptable-object)
 * TODO where are sounds?
