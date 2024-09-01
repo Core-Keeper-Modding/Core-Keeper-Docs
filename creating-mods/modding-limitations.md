@@ -8,7 +8,7 @@ description: >-
 
 ## Unexpectedly Complex things to Mod
 
-_Items in this section are not necessarily hard to mod, but are not as easy as people usually expect them to be._
+_Things in this section are not necessarily hard to mod, but are not as easy as people usually expect them to be._
 
 ### "A copy of \<base-game content>, but with \<this thing tweaked>"
 
@@ -18,7 +18,7 @@ Because of how the modding API requires modders to define and register content, 
 
 ## Hard things to Mod
 
-_Items in this section are possible to mod, but are harder than they seem._
+_Things in this section are possible to mod, but are harder than they seem._
 
 ### Texture Packs
 
@@ -26,13 +26,11 @@ Adding generic texture packs can be rather painful. The issue stems from the fac
 \
 Very specific texture altering mods however are relatively easy to create.
 
-
-
 ***
 
 ## Prohibitively Difficult to Mod
 
-_Items in this section are technically possible to mod, but a massive pain._
+_Things in this section are technically possible to mod, but a massive pain._
 
 ### World Generation
 
@@ -51,7 +49,7 @@ A number of sections of the code are compiled with Burst for performance reasons
 
 ## Basically Impossible to Mod
 
-_Limitations in the modding API make it basically impossible to modify these game behaviors._ Do you think you have found a way to modify them despite this? [Contribute to the docs](../how-to-contribute.md) and explain how!
+_Limitations in the modding API make it basically impossible to modify these things._ Do you think you have found a way to modify them despite this? [Contribute to the docs](../how-to-contribute.md) and explain how!
 
 ### TODO - Put something here
 

@@ -4,7 +4,7 @@ description: >-
   code.
 ---
 
-# IDE
+# Scripting IDE
 
 ## Visual Studio
 
