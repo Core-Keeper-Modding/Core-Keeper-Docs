@@ -42,7 +42,9 @@ This most common cause of this is installing broken or outdated mods.
 * [#check-your-log-files-for-error-messages](troubleshooting.md#check-your-log-files-for-error-messages "mention")  - sometimes mods can error in ways that don't get caught by Mod Reporter
 * [reporting-bugs.md](reporting-bugs.md "mention")
 
+### Failed to create mod on mod.io: Api failed to complete the request
 
+* Try [uploading the mod manually](../creating-mods/releasing-mods/mod-files-upload.md)
 
 ***
 
