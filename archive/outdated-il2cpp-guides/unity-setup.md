@@ -96,4 +96,4 @@ There might be missing script references. [This tool](https://assetstore.unity.c
 
 ## Old (Legacy) Guide
 
-Previous version of this guide can be found [here](../archive/old-unity-guide.md)
+Previous version of this guide can be found [here](../outdated-unity-setup-guide.md)

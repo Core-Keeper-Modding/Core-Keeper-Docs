@@ -10,9 +10,9 @@ To start modding this game follow these steps. This guide assumes you know C# la
 
 1. Install `Visual Studio` or `Jet Brains Rider` IDE. Both of these will work fine, however I personally would recommend Rider as its much better if you can get it.
 2. Follow [BepInEx staring guide](https://docs.bepinex.dev/master/articles/dev\_guide/plugin\_tutorial/index.html) to setup your basic .NET project
-3. Install DnSpy and [setup source viewing](how-to-view-game-source-code.md)
+3. Install DnSpy and [setup source viewing](view-source-code.md)
 4. Make sure to use [CoreLib](https://github.com/Jrprogrammer/CoreLib) in your mod. It will make adding custom content easier
-5. If you intent to make custom blocks, enemies, etc follow [Unity project setup guide](getting-the-assets-in-unity.md)
+5. If you intent to make custom blocks, enemies, etc follow [Unity project setup guide](unity-setup.md)
 
 Also below you can find the list of commonly used libraries and tools.
 

@@ -1,4 +1,4 @@
-# Reference
+# General Reference
 
 This page is intended to serve as a reference while no other tutorials have been made. It is basically a pastebin.
 
@@ -8,7 +8,7 @@ Getting the main manager instance opens a lot of doors to the rest of the game's
 
 Basic patch:
 
-```
+```csharp
  [HarmonyPatch(typeof(Manager))]
  internal class ManagerPatch
  {   
@@ -32,13 +32,13 @@ Also [CoreLib](https://github.com/Jrprogrammer/CoreLib) provides an API to add n
 
 In your plugin `Load()` method call:
 
-```
+```csharp
 RewiredKeybinds.AddKeybind("KeyBindUniqueId", "My Key Bind", KeyboardKeyCode.K);
 ```
 
 Then in your MonoBehavior `Update()` method you can check the button:
 
-```
+```csharp
 public class UpdateMono : MonoBehaviour
 {
     private Player player;
@@ -70,7 +70,7 @@ public class UpdateMono : MonoBehaviour
 
 It is possible to change the recipe of an item by changing the `requiredObjectsToCraft` value.
 
-```
+```csharp
 foreach (var objectType in PugDatabase.objectsByType) {
     if (ot.Value.objectID == ObjectID.CopperMiningPick) { // ObjectID can be anything!
         List<CraftingObject> newList = new List<CraftingObject>(); // Create a new list of Crafting Objects
@@ -93,7 +93,7 @@ The way it is set up is through an `AddComponent<T>()` statement in the `Load()`
 
 This is handy for when you need to run code every frame without patching into an existing class' lifecycle.
 
-```
+```csharp
 public class Plugin : BasePlugin {
     public override void Load() {
         AddComponent<CustomMono>();
