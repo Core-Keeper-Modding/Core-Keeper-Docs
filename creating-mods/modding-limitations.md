@@ -6,7 +6,7 @@ description: >-
 
 # Modding Limitations
 
-## Unexpectedly Complex things to Mod
+## Unexpectedly Complex Things to Mod
 
 _Things in this section are not necessarily hard to mod, but are not as easy as people usually expect them to be._
 
@@ -16,7 +16,7 @@ Because of how the modding API requires modders to define and register content, 
 
 ***
 
-## Hard things to Mod
+## Hard Things to Mod
 
 _Things in this section are possible to mod, but are harder than they seem._
 
@@ -49,7 +49,7 @@ A number of sections of the code are compiled with Burst for performance reasons
 
 ## Basically Impossible to Mod
 
-_Limitations in the modding API make it basically impossible to modify these things._ Do you think you have found a way to modify them despite this? [Contribute to the docs](../how-to-contribute.md) and explain how!
+_Limitations in the modding API make it basically impossible to modify these things._ Have you found a way to modify them despite this? [Contribute to the docs](../how-to-contribute.md) and explain how!
 
 ### TODO - Put something here
 

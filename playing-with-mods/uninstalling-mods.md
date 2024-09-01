@@ -24,15 +24,15 @@ In Steam, open the game's Properties, then choose the following launch variant: 
 
 In this state you will be able to unsubscribe broken mods from the main menu and return your game back to working state. Remember to switch back after you're done, or any mods you install later won't load!
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Accessing the game's properties in Steam</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>Accessing the game's properties in Steam</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Switching to the No Mods launch option.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Switching to the No Mods launch option.</p></figcaption></figure>
 
 ## Unsubscribe from all mods via mod.io website
 
 If unsubscribing from mods in-game isn't working, try unsubscribing from them on the mod.io website. The "My Subscriptions" filter makes it easy to find them.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% embed url="https://mod.io/g/corekeeper" %}
 

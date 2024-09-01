@@ -16,7 +16,7 @@ To package the mod and try it out in-game, first open the Mod SDK tab. If you've
 
 Click the `Mod Settings` button to open the packaging UI, select `ItemExample` from the "Mod" dropdown, then click `Install Mod`. This will open a popup prompt and take at least a few seconds to execute. Once it's complete you'll see this popup:
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 Launch the game and notice that the main menu's Mods button says you have 1 mod loaded (assuming you don't currently have any other mods loaded). If you were to go into this mods menu, the ItemExample mod would not show up because it has been installed outside of the mod.io ecosystem. This is to be expected for locally installed mods.
 

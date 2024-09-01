@@ -14,6 +14,15 @@ TIP: You can use your browser's Find feature (usually `Ctrl`+`F`) to search this
 Each entry in this section has a list of clickable links to directions on trying that fix approach.
 {% endhint %}
 
+### I installed mods, but they don't seem to be doing anything
+
+* [#read-the-mods-documentation](troubleshooting.md#read-the-mods-documentation "mention") to find out how to access its features.
+* [Did you accidentally launch in "No Mods" mode?](uninstalling-mods.md#launch-the-game-in-no-mods-mode-then-unsubscribe-from-mods)
+* Check the tags on the mod.io page - is the mod not updated for this game version yet?
+* [#install-the-mod-reporter-mod-to-check-for-loading-errors](troubleshooting.md#install-the-mod-reporter-mod-to-check-for-loading-errors "mention")&#x20;
+* [#check-your-log-files-for-error-messages](troubleshooting.md#check-your-log-files-for-error-messages "mention")  - sometimes mods can error in ways that don't get caught by Mod Reporter
+* [reporting-bugs.md](reporting-bugs.md "mention")
+
 ### "Mods" menu on title screen does not load (Failed to Fetch)
 
 * [#launch-the-game-in-no-mods-mode-then-unsubscribe-from-mods](uninstalling-mods.md#launch-the-game-in-no-mods-mode-then-unsubscribe-from-mods "mention")  - remove mods until the problem stops to track down what mod was causing the problem.
@@ -33,14 +42,6 @@ This most common cause of this is installing broken or outdated mods.
 * [uninstalling-mods.md](uninstalling-mods.md "mention")  - remove mods until the problem stops to track down what mod was causing the problem.
 * [#ask-for-help-on-the-discord](troubleshooting.md#ask-for-help-on-the-discord "mention")
 * Once you find out what mod in specific is the cause - [reporting-bugs.md](reporting-bugs.md "mention")
-
-### I installed mods, but they don't seem to be doing anything
-
-* [Did you accidentally launch in "No Mods" mode?](uninstalling-mods.md#launch-the-game-in-no-mods-mode-then-unsubscribe-from-mods)
-* [#read-the-mods-documentation](troubleshooting.md#read-the-mods-documentation "mention") to find out how to access its features.
-* [#install-the-mod-reporter-mod-to-check-for-loading-errors](troubleshooting.md#install-the-mod-reporter-mod-to-check-for-loading-errors "mention")
-* [#check-your-log-files-for-error-messages](troubleshooting.md#check-your-log-files-for-error-messages "mention")  - sometimes mods can error in ways that don't get caught by Mod Reporter
-* [reporting-bugs.md](reporting-bugs.md "mention")
 
 ### Failed to create mod on mod.io: Api failed to complete the request
 

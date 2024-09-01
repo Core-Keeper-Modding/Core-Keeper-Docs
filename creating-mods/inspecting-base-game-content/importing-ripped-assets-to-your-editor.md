@@ -4,17 +4,13 @@ description: Bring base-game assets into your editor for quick reference.
 
 # Importing Ripped Assets to your Editor
 
-This guide is not complete yet! If you can finish it, [add the rest](../../how-to-contribute.md) !
-
-
-
 First, run Asset Ripper to export assets from the game.
 
 {% content-ref url="../modding-tools/asset-ripper.md" %}
 [asset-ripper.md](../modding-tools/asset-ripper.md)
 {% endcontent-ref %}
 
-Next, time to import them into your editor. First, close the Unity editor to keep it from wasting time hot refreshing as stuff is still being imported.
+Next, time to import them into your editor. Close the Unity editor first to keep it from wasting time hot refreshing as stuff is still being imported.
 
 Go to the  `<export folder>\ExportedProject\Assets\` folder and copy only the following folders into your SDK project's assets folder. Copying anything not listed here risks bricking it.
 

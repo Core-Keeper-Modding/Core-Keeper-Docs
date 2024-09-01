@@ -10,7 +10,7 @@ description: How to install mods!
 
 The in-game mod integration can be rather finicky, so you may want to try another approach instead. It can very easily forget which mods you have installed or forget to install dependencies. It also has pretty terrible UX - for example, in order to scroll the screen, you must click and drag the mouse, as the mouse wheel does nothing.
 
-To use this approach, simply launch the game and access the Mods screen from the main menu. To start using a mod, subscribe to it. It is highly suggested that you subscribe to each mod dependency individually to ensure it is downloaded correctly.
+To use this approach, simply launch the game and access the Mods screen from the main menu. To start using a mod, subscribe to it. It is highly suggested that you subscribe to each mod dependency individually to ensure it is downloaded correctly. For the best results, relaunch your game after installing or removing mods.
 
 ### Core Launcher
 
