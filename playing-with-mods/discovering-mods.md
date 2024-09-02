@@ -15,7 +15,7 @@ layout:
 
 # Discovering Mods
 
-## Get Core Keeper mods from the mod.io website!
+## Find Core Keeper mods on the mod.io website!
 
 You can browse available mods via the in-game UI (accessible via the main menu) or the mod.io site:&#x20;
 
@@ -29,4 +29,8 @@ Use the Filters system to focus what mods are displayed. For example, filter by 
 
 All mods on Thunderstore ([https://thunderstore.io/c/core-keeper/](https://thunderstore.io/c/core-keeper/)) are outdated and will not work on modern Core Keeper versions.
 
-<table data-card-size="large" data-view="cards" data-full-width="true"><thead><tr><th></th><th data-hidden></th><th data-hidden></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h2>Next up: Installing Mods</h2></td><td><h2></h2></td><td></td><td><a href="../.gitbook/assets/core-keeper-modding-guide-icon.png">core-keeper-modding-guide-icon.png</a></td><td><a href="installing-mods/">installing-mods</a></td></tr></tbody></table>
+## Next up: Installing Mods
+
+{% content-ref url="installing-mods/" %}
+[installing-mods](installing-mods/)
+{% endcontent-ref %}
