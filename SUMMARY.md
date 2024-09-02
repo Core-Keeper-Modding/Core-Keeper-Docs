@@ -6,7 +6,9 @@
 ## Playing with Mods
 
 * [Discovering Mods](playing-with-mods/discovering-mods.md)
-* [Installing Mods](playing-with-mods/installing-mods.md)
+* [Installing Mods](playing-with-mods/installing-mods/README.md)
+  * [On Game Clients](playing-with-mods/installing-mods/on-game-clients.md)
+  * [On Dedicated Servers](playing-with-mods/installing-mods/on-dedicated-servers.md)
 * [Troubleshooting](playing-with-mods/troubleshooting.md)
 * [Reporting Bugs](playing-with-mods/reporting-bugs.md)
 * [Uninstalling Mods](playing-with-mods/uninstalling-mods.md)

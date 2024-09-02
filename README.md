@@ -2,6 +2,20 @@
 description: Welcome to the Core Keeper Modding wiki.
 cover: .gitbook/assets/banner-2.png
 coverY: 0
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: false
+  pagination:
+    visible: false
 ---
 
 # 🏠 Home

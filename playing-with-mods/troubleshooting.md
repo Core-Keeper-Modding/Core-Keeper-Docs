@@ -54,7 +54,7 @@ You did not properly install the chat commands mod, or something is preventing i
 
 * [#install-the-mod-reporter-mod-to-check-for-loading-errors](troubleshooting.md#install-the-mod-reporter-mod-to-check-for-loading-errors "mention")
 * [#manually-subscribe-to-all-of-a-mods-dependencies](troubleshooting.md#manually-subscribe-to-all-of-a-mods-dependencies "mention")
-* Try [uninstalling the mod](uninstalling-mods.md) then [installing it (and its dependencies) via another method](installing-mods.md).
+* Try [uninstalling the mod](uninstalling-mods.md) then [installing it (and its dependencies) via another method](installing-mods/).
 * [#ask-for-help-on-the-discord](troubleshooting.md#ask-for-help-on-the-discord "mention")
 
 ### `Quantum Processor Error: Command <something> could not be found.`
