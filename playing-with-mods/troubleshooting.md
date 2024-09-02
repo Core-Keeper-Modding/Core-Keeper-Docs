@@ -55,6 +55,11 @@ You did not properly install the chat commands mod, or something is preventing i
 * [#install-the-mod-reporter-mod-to-check-for-loading-errors](troubleshooting.md#install-the-mod-reporter-mod-to-check-for-loading-errors "mention")
 * [#manually-subscribe-to-all-of-a-mods-dependencies](troubleshooting.md#manually-subscribe-to-all-of-a-mods-dependencies "mention")
 * Try [uninstalling the mod](uninstalling-mods.md) then [installing it (and its dependencies) via another method](installing-mods.md).
+* [#ask-for-help-on-the-discord](troubleshooting.md#ask-for-help-on-the-discord "mention")
+
+### `Quantum Processor Error: Command <something> could not be found.`
+
+* Run chat commands in the game's chat window, not the debug Quantum Console. If you still want to use the quantum console, prefix your commands with the word `chat` so they are executed as chat commands.
 
 ***
 
@@ -82,11 +87,11 @@ The game's mod.io integration often fails to download mod dependencies. Visit th
 
 ### Ask for Help on the Discord
 
-Join the [Core Keeper discord](https://discord.com/invite/corekeeper) and ask for help in the #modding-help channel. Make sure to mention:
+Join the [Core Keeper discord](https://discord.com/invite/corekeeper) and ask for help in the `#modding-help` channel. Make sure to:
 
-* What mods you are using.
-* What you expected to happen,and what actually happened.
-* If you're playing in singleplayer, multiplayer, or a dedicated server, and if you're the host or the client.
-* Your [log files](../concepts/important-folder-paths.md#log-files)! It will be the first thing people ask for if you don't provide it.
+* Include your [log files](../concepts/important-folder-paths.md#log-files)! It will be the first thing people ask for if you don't provide it.
+* Mention what mods you are using.
+* Say what you expected to happen, and what actually happened. Screenshots help too.
+* Say if you're playing in singleplayer, multiplayer, or a dedicated server, and if you're the host or the client.
 
 Remember to _communicate what you fixes have already tried_. People are a lot more willing to help if you make it clear you've already put in some effort!
