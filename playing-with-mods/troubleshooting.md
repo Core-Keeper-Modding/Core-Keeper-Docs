@@ -21,9 +21,10 @@ Each entry in this section has a list of clickable links to directions on trying
 * Check the tags on the mod.io page - is the mod not updated for this game version yet?
 * [#install-the-mod-reporter-mod-to-check-for-loading-errors](troubleshooting.md#install-the-mod-reporter-mod-to-check-for-loading-errors "mention")&#x20;
 * [#check-your-log-files-for-error-messages](troubleshooting.md#check-your-log-files-for-error-messages "mention")  - sometimes mods can error in ways that don't get caught by Mod Reporter
+* [#ask-for-help-on-the-discord](troubleshooting.md#ask-for-help-on-the-discord "mention")
 * [reporting-bugs.md](reporting-bugs.md "mention")
 
-### "Mods" menu on title screen does not load (Failed to Fetch)
+### "Mods" menu on title screen does not load (`Failed to Fetch`)
 
 * [#launch-the-game-in-no-mods-mode-then-unsubscribe-from-mods](uninstalling-mods.md#launch-the-game-in-no-mods-mode-then-unsubscribe-from-mods "mention")  - remove mods until the problem stops to track down what mod was causing the problem.
 * [#ask-for-help-on-the-discord](troubleshooting.md#ask-for-help-on-the-discord "mention")
@@ -43,9 +44,17 @@ This most common cause of this is installing broken or outdated mods.
 * [#ask-for-help-on-the-discord](troubleshooting.md#ask-for-help-on-the-discord "mention")
 * Once you find out what mod in specific is the cause - [reporting-bugs.md](reporting-bugs.md "mention")
 
-### Failed to create mod on mod.io: Api failed to complete the request
+### `Failed to create mod on mod.io: Api failed to complete the request`
 
 * Try [uploading the mod manually](../creating-mods/releasing-mods/mod-files-upload.md)
+
+### `Command give does not exist!`
+
+You did not properly install the chat commands mod, or something is preventing it from loading.
+
+* [#install-the-mod-reporter-mod-to-check-for-loading-errors](troubleshooting.md#install-the-mod-reporter-mod-to-check-for-loading-errors "mention")
+* [#manually-subscribe-to-all-of-a-mods-dependencies](troubleshooting.md#manually-subscribe-to-all-of-a-mods-dependencies "mention")
+* Try [uninstalling the mod](uninstalling-mods.md) then [installing it (and its dependencies) via another method](installing-mods.md).
 
 ***
 
@@ -66,6 +75,10 @@ Take a look at your [game log files](../concepts/important-folder-paths.md#log-f
 ### Read the Mod's Documentation
 
 Check for directions on how to use the mod, known issues, etc. on the mod's page on mod.io.
+
+### Manually subscribe to all of a mod's dependencies
+
+The game's mod.io integration often fails to download mod dependencies. Visit the mod's page on the [mod.io website](https://mod.io/g/corekeeper/) to see what they are and manually subscribe to each of them.
 
 ### Ask for Help on the Discord
 
