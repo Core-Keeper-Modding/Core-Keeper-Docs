@@ -20,18 +20,4 @@ layout:
 
 # 🏠 Home
 
-## Looking to play with mods?
-
-Check out this section!
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-## Looking to create your own mods?
-
-Check out this section!
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
+<table data-card-size="large" data-view="cards" data-full-width="true"><thead><tr><th></th><th data-hidden></th><th data-hidden></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h2>Play With Mods</h2></td><td></td><td></td><td><a href=".gitbook/assets/core-keeper-mods-play.png">core-keeper-mods-play.png</a></td><td><a href="broken-reference">Broken link</a></td></tr><tr><td><h2>Create Your Own Mods</h2></td><td></td><td></td><td><a href=".gitbook/assets/core_keeper_keyartmodsdk.jpg">core_keeper_keyartmodsdk.jpg</a></td><td><a href="broken-reference">Broken link</a></td></tr></tbody></table>
