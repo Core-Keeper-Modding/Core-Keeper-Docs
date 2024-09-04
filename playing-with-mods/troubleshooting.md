@@ -19,30 +19,34 @@ Each entry in this section has a list of clickable links to directions on trying
 * [#read-the-mods-documentation](troubleshooting.md#read-the-mods-documentation "mention") to find out how to access its features.
 * [Did you accidentally launch in "No Mods" mode?](uninstalling-mods.md#launch-the-game-in-no-mods-mode-then-unsubscribe-from-mods)
 * Check the tags on the mod.io page - is the mod not updated for this game version yet?
-* [#install-the-mod-reporter-mod-to-check-for-loading-errors](troubleshooting.md#install-the-mod-reporter-mod-to-check-for-loading-errors "mention")&#x20;
 * [#check-your-log-files-for-error-messages](troubleshooting.md#check-your-log-files-for-error-messages "mention")  - sometimes mods can error in ways that don't get caught by Mod Reporter
 * [#ask-for-help-on-the-discord](troubleshooting.md#ask-for-help-on-the-discord "mention")
 * [reporting-bugs.md](reporting-bugs.md "mention")
 
-### "Mods" menu on title screen does not load (`Failed to Fetch`)
-
-* [#launch-the-game-in-no-mods-mode-then-unsubscribe-from-mods](uninstalling-mods.md#launch-the-game-in-no-mods-mode-then-unsubscribe-from-mods "mention")  - remove mods until the problem stops to track down what mod was causing the problem.
-* [#ask-for-help-on-the-discord](troubleshooting.md#ask-for-help-on-the-discord "mention")
-
 ### Can't join my friend's multiplayer game
 
-* Make sure that both players have exactly the same mods installed, removing any possibility of a mismatch.
-* [#check-your-log-files-for-error-messages](troubleshooting.md#check-your-log-files-for-error-messages "mention")
+See below.
+
+### **`Game version mismatch` when playing multiplayer**
+
+* Read the [general multiplayer notes](installing-mods/for-multiplayer.md)
+* Ensure that all players have exactly the same mods installed
+* If you're using mod.io interation, did it automatically update a mod on you? This means your installed mod version doesn't match the host's. One of you needs to update. Consider switching to [manual mod installation](installing-mods/on-game-clients.md#manual-file-management) to avoid the possibility of unexpected updates.
 * [#ask-for-help-on-the-discord](troubleshooting.md#ask-for-help-on-the-discord "mention")
 
 ### Help, my game is crashing
 
-This most common cause of this is installing broken or outdated mods.
+The most common cause of this is installing broken or outdated mods.
 
-* [#install-the-mod-reporter-mod-to-check-for-loading-errors](troubleshooting.md#install-the-mod-reporter-mod-to-check-for-loading-errors "mention")
+* [#check-your-log-files-for-error-messages](troubleshooting.md#check-your-log-files-for-error-messages "mention")
 * [uninstalling-mods.md](uninstalling-mods.md "mention")  - remove mods until the problem stops to track down what mod was causing the problem.
 * [#ask-for-help-on-the-discord](troubleshooting.md#ask-for-help-on-the-discord "mention")
 * Once you find out what mod in specific is the cause - [reporting-bugs.md](reporting-bugs.md "mention")
+
+### "Mods" menu on title og photscreen does not load (`Failed to Fetch`)
+
+* [#launch-the-game-in-no-mods-mode-then-unsubscribe-from-mods](uninstalling-mods.md#launch-the-game-in-no-mods-mode-then-unsubscribe-from-mods "mention")  - remove mods until the problem stops to track down what mod was causing the problem.
+* [#ask-for-help-on-the-discord](troubleshooting.md#ask-for-help-on-the-discord "mention")
 
 ### `Failed to create mod on mod.io: Api failed to complete the request`
 
@@ -52,7 +56,7 @@ This most common cause of this is installing broken or outdated mods.
 
 You did not properly install the chat commands mod, or something is preventing it from loading.
 
-* [#install-the-mod-reporter-mod-to-check-for-loading-errors](troubleshooting.md#install-the-mod-reporter-mod-to-check-for-loading-errors "mention")
+* Are you sure you've subscribed to Chat Commands and not just CoreLib.Commands?
 * [#manually-subscribe-to-all-of-a-mods-dependencies](troubleshooting.md#manually-subscribe-to-all-of-a-mods-dependencies "mention")
 * Try [uninstalling the mod](uninstalling-mods.md) then [installing it (and its dependencies) via another method](installing-mods/).
 * [#ask-for-help-on-the-discord](troubleshooting.md#ask-for-help-on-the-discord "mention")

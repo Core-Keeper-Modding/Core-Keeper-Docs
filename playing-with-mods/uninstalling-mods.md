@@ -26,7 +26,7 @@ In this state you will be able to unsubscribe broken mods from the main menu and
 
 <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>Accessing the game's properties in Steam</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Switching to the No Mods launch option.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Switching to the No Mods launch option.</p></figcaption></figure>
 
 ## Unsubscribe from all mods via mod.io website
 

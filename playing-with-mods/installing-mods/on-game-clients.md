@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+---
+
 # On Game Clients
 
 The following approaches are available:
@@ -6,9 +20,17 @@ The following approaches are available:
 
 ## Using the In-Game mod.io Integration
 
-The in-game mod integration can be rather finicky, so you may want to try another approach instead. It sometimes forgets to install dependencies. It also has poor UX - for example, in order to scroll the screen, you must click and drag the mouse, as the mouse wheel does nothing.
+The in-game mod integration can be rather finicky, so **you may want to try another approach instead**. It has the following problems:
 
-To use this approach, simply launch the game and access the Mods screen from the main menu. To start using a mod, subscribe to it. It is highly suggested that you subscribe to each mod dependency individually to ensure it is downloaded correctly. For the best results, relaunch your game after installing or removing mods.
+* Does not show you the list of mod dependencies (mods that must be installed for other mods to function)
+* Sometimes does not automatically install mod dependencies for you
+* Poor UX -  for example, in order to scroll the screen, you must click and drag the mouse, as the mouse wheel does nothing
+
+If you still want to use this approach, simply launch the game and access the **Mods** screen from the main menu. To start using a mod, Subscribe to it. The game should automatically check for and install mod updates every launch.
+
+It is highly suggested that you subscribe to each mod dependency individually to ensure it is downloaded correctly. You will have to view the mod on the mod.io website to see what they are.
+
+For the best results, relaunch your game after installing or removing mods.
 
 ***
 
@@ -24,10 +46,30 @@ Core Launcher has a [dedicated discussion thread](https://discord.com/channels/8
 
 ## Manual File Management&#x20;
 
-If you'd rather manage mod files manually, you can download them from the mod's mod.io page and place them in the [mods folder](../../concepts/important-folder-paths.md#mod-files) yourself.
+If you'd rather manage mod files manually, you can download them from the mod's mod.io page and place them in the [mods folder](../../concepts/important-folder-paths.md#mod-files) yourself. Mods installed in this manner will never be automatically updated.
 
-To do so open game installation folder and navigate to `<steam-game-folder>\Core Keeper\CoreKeeper_Data\StreamingAssets`. Create the folder `Mods` if it doesn't already exist and unzip mod zips into their own folders. The name of each mod folder does not matter as long as it is unique, but you probably want it to include the name of the mod for later reference.\
-Ensure that each mod folder has a `ModManifest.json` file.
+To do this:
+
+1. Unsubscribe from all mods you are subscribed to on mod.io to prevent conflicts between the two approaches
+2. Open your [game installation folder](../../concepts/important-folder-paths.md#game-install-directory)&#x20;
+   *   On a default windows Steam installation, this is:&#x20;
+
+       ```
+       C:\Program Files (x86)\Steam\steamapps\common\Core Keeper\
+       ```
+   * If that path doesn't work for you, use the above link to find out where that is on your system
+3. Go to the `CoreKeeper_Data\StreamingAssets\Mods` subfolder, creating any folders along the way if they do not already exist.
+   *   On a default windows Steam installation, this is:&#x20;
+
+       ```
+       C:\Program Files (x86)\Steam\steamapps\common\Core Keeper\CoreKeeper_Data\StreamingAssets\Mods
+       ```
+4. Download the mods you want from the mod.io website using the Download File button
+   * ![](../../.gitbook/assets/image.png)&#x20;
+5. Unzip each of the mod zips you downloaded inside the folder so that each mod is in its own subfolder.
+   * The name of each mod folder does not matter as long as it is unique, but you probably want it to include the name of the mod for later reference.
+6. Ensure that each mod subfolder has a `ModManifest.json` file.
+7. Good to go - launch the game and start playing!
 
 ***
 

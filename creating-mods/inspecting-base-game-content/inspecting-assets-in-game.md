@@ -18,11 +18,11 @@ description: >-
 2. Open the "Object Explorer" window from the newly added top bar
    1.
 
-       <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 3. Switch to "Object Search" mode and type `MinecartEntity` into the "Name contains:" search box, then press Search
    1.
 
-       <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 4. Find the entry `"MinecartEntity" (UnityEngine.GameObject)` and double click it&#x20;
    1.
 
