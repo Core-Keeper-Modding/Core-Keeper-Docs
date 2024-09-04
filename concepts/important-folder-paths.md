@@ -8,57 +8,122 @@
 
 ### Xbox Desktop Application
 
-If you know where to find these files, update the docs to add this info!
+If you know where to find the Xbox desktop install files, [update the docs](../how-to-contribute.md) to add this info!
 
 ## Log Files
 
-Windows Client:  `%userprofile%\appdata\locallow\Pugstorm\Core Keeper`
+{% tabs %}
+{% tab title="Windows Client" %}
+`%userprofile%\appdata\locallow\Pugstorm\Core Keeper`
+{% endtab %}
 
-Linux Client: `TODO`
+{% tab title="Linux Client" %}
+TODO - do you know where it is? [Add it](../how-to-contribute.md)!
+{% endtab %}
 
-Linux Server: Placed in same folder as the server executable. No past logs are kept.
+{% tab title="Linux Server" %}
+Placed in same folder as the server executable. No past logs are kept.
+{% endtab %}
+{% endtabs %}
 
 ## Save Files
 
 ### Character Save Files
 
-Windows: `%USERPROFILE%\AppData\LocalLow\Pugstorm\Core Keeper\Steam\<user-id>\saves`
+{% tabs %}
+{% tab title="Windows Client" %}
+`%USERPROFILE%\AppData\LocalLow\Pugstorm\Core Keeper\Steam\<user-id>\saves`
+{% endtab %}
 
-Linux Client: `$HOME/.config/unity3d/Pugstorm/Core Keeper/Steam/<user-id>/saves`
+{% tab title="Linux Client" %}
+`$HOME/.config/unity3d/Pugstorm/Core Keeper/Steam/<user-id>/saves`
+{% endtab %}
 
-Linux Server: Not applicable
+{% tab title="Linux Server" %}
+Not applicable - characters exist client side.
+{% endtab %}
+{% endtabs %}
 
 ### World Save Files
 
-Windows: `%USERPROFILE%\AppData\LocalLow\Pugstorm\Core Keeper\Steam\<user-id>\worlds`
+{% tabs %}
+{% tab title="Windows Client" %}
+`%USERPROFILE%\AppData\LocalLow\Pugstorm\Core Keeper\Steam\<user-id>\worlds`
+{% endtab %}
 
-Linux Client: `$HOME/.config/unity3d/Pugstorm/Core Keeper/Steam/<user-id>/worlds`
+{% tab title="Linux Client" %}
+`$HOME/.config/unity3d/Pugstorm/Core Keeper/Steam/<user-id>/worlds`
+{% endtab %}
 
-Linux Server: `/Save/worlds` subfolder of the server install directory.
+{% tab title="Linux Server" %}
+`/Save/worlds` subfolder of the server install directory.
+{% endtab %}
+{% endtabs %}
 
 ## Mod Files
 
-### Desktop Mods (Auto-Downloaded via mod.io)
+There are 2 locations where mod files are stored:
 
-Mods automatically downloaded by mod.io can be found at `C:\Users\Public\mod.io\5289`. The folder contains:
+### Auto-Downloaded via mod.io
 
-\-`state.json` , a file that encodes subscribed mods and their state.
+This is where the game's mod.io integration downloads the mods you are subscribed to.
 
-\- `mods/`, a folder which contains all downloaded mods. The folder names are mod.io IDs and are not human readable unless you lookup the IDs using the API. You can edit or delete files in this folder to remove or unsubscribe from mods.
+{% tabs %}
+{% tab title="Windows Client" %}
+`C:\Users\Public\mod.io\5289`
+{% endtab %}
 
-### Desktop Mods (Manually Added)
+{% tab title="Linux Client" %}
+TODO - do you know where it is? [Add it](../how-to-contribute.md)!
+{% endtab %}
 
-`CoreKeeper_Data\StreamingAssets\Mods` subfolder of your [game install directory](important-folder-paths.md#game-install-directory). This is where mod developers can find the mods packaged by the Unity editor during mod development.
+{% tab title="Linux Server" %}
+Not applicable - servers can't use the mod.io integration. See the [#manually-added-mods](important-folder-paths.md#manually-added-mods "mention") section.
+{% endtab %}
+{% endtabs %}
 
-### Dedicated Server Mods
+The folder contains:
 
-Server mods are placed in the `CoreKeeperServer_Data\StreamingAssets\Mods` subfolder of the server install directory.
+* `state.json` , a file that encodes subscribed mods and their state.
+* `mods/`, a folder which contains all downloaded mods. The folder names are mod.io IDs and are not human readable unless you lookup the IDs using the API. You can edit or delete files in this folder to remove or unsubscribe from mods.
+
+### Manually Added Mods
+
+If you want to downloads mods manually, this is where you should put them. This is also where mod developers can find the mods packaged by the Unity editor during mod development.
+
+{% tabs %}
+{% tab title="Windows Client" %}
+`CoreKeeper_Data\StreamingAssets\Mods` subfolder of your [game install directory](important-folder-paths.md#game-install-directory).
+
+For example:
+
+```
+C:\Program Files (x86)\Steam\steamapps\common\Core Keeper\CoreKeeper_Data\StreamingAssets\Mods
+```
+{% endtab %}
+
+{% tab title="Linux Client" %}
+`CoreKeeper_Data\StreamingAssets\Mods` subfolder of your [game install directory](important-folder-paths.md#game-install-directory).
+{% endtab %}
+
+{% tab title="Linux Server" %}
+`CoreKeeperServer_Data\StreamingAssets\Mods` subfolder of the server install directory.
+{% endtab %}
+{% endtabs %}
 
 ## Mod Configuration Files
 
-Windows: `%USERPROFILE%\AppData\LocalLow\Pugstorm\Core Keeper\Steam\<user-id>\mods`
+{% tabs %}
+{% tab title="Windows Client" %}
+`%USERPROFILE%\AppData\LocalLow\Pugstorm\Core Keeper\Steam\<user-id>\mods`
+{% endtab %}
 
-Linux Client: `TODO`
+{% tab title="Linux Client" %}
+TODO - do you know where it is? [Add it](../how-to-contribute.md)!
+{% endtab %}
 
-Linux Server: `/Save/mods`subfolder of the server install directory.
+{% tab title="Linux Server" %}
+`/Save/mods`subfolder of the server install directory.
+{% endtab %}
+{% endtabs %}
 
