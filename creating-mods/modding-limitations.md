@@ -6,13 +6,9 @@ description: >-
 
 # Modding Limitations
 
-## Unexpectedly Complex Things to Mod
+Because of how the game is implemented and how modding API requires modders to define and register content, many concepts and ideas you have about modding from other games do not carry over well.
 
-_Things in this section are not necessarily hard to mod, but are not as easy as people usually expect them to be._
-
-### "A copy of \<base-game content>, but with \<this thing tweaked>"
-
-Because of how the modding API requires modders to define and register content, creating a copy of existing base-game content can be unexpectedly difficult if not impossible.
+This game is implemented with [ECS](../concepts/technologies-and-tools.md#ecs) so most Object Oriented Programming principles do not apply. As you might have noticed when [trying out the Item Example mod](getting-started-modding/testing-the-example-mods.md), if you want to make a tweaked copy of the Copper Sword, you can't just extend the base-game one and change some things. You must create a totally new copper sword from scratch and redefine all of its properties and behaviors on your version.
 
 ***
 

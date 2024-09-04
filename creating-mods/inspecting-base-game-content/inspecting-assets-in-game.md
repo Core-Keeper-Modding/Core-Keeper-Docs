@@ -6,13 +6,11 @@ description: >-
 
 # Inspecting Assets In-Game
 
-{% content-ref url="../modding-tools/unity-explorer.md" %}
-[unity-explorer.md](../modding-tools/unity-explorer.md)
-{% endcontent-ref %}
-
 ## Example Cases
 
 ### Fixing an imported MinecartEntity prefab by looking at the real one in game
+
+This example talks about [fixing an imported prefab ripped from the game](importing-ripped-assets-to-your-editor.md) using info in Unity Explorer.
 
 1. Install [Unity Explorer](../modding-tools/unity-explorer.md) and relaunch the game
 2. Open the "Object Explorer" window from the newly added top bar
