@@ -1,6 +1,8 @@
 # No Console Support
 
+{% hint style="danger" %}
 Sorry... Core Keeper console editions do not support modding, and probably never will.
+{% endhint %}
 
 See this message from the developers:
 

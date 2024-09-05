@@ -23,17 +23,42 @@ Here is other stuff to consider including:
 
 * Screenshots of the mod in action. People like pictures!
 * Known bugs (or a link to a bug tracker)
+* Link to mod source repository (ex. GitHub)
 * "Special Thanks" to list other people that helped your mod come to be
 
 ## Apply Tags
 
+Tags help categorize your mod and assist users with finding it. Some tags also have special functionality.
+
+### Game Version
+
 Use the "Game Version" tags to indicate what versions your mod supports. If a user doesn't see the latest game version tag on your mod, they might think it's broken, and the game may report the mod as out of date to the user.
 
-Use the "Type" tags as categories for summarizing what kinds of content your mod adds.
+### Type
 
-Use tags "Application Type" to help users understand where the mod needs to be installed. Mark the mod as "Client" if the mod is intended to be installed on the client, mark the mod as "Server" if the mod is intended to be installed on the server. Tick both if both sides must have the mod.
+Use the "Type" tags as categories for summarizing what kinds of content your mod adds and changes it makes. You can select as many or as few as you want.
 
-"Access Type" tag sets mod loading behavior. If mod has "Asset" tag, scripts WONT be loaded at all. If the mod has tag "Script" (Or if it hasn't set any tags in "Access Type". This is legacy behavior), its scripts will be loaded. Use the "Script (Elevated Access)" tag if your mod needs [elevated access](../../concepts/elevated-access.md).
+### Application Type
+
+Use tags "Application Type" to help users understand where the mod needs to be installed in [multiplayer](../../playing-with-mods/installing-mods/for-multiplayer.md).
+
+| Tag Combination             | Purpose                                                                                     |
+| --------------------------- | ------------------------------------------------------------------------------------------- |
+| Client                      | Mod must be installed on game clients to function correctly.                                |
+| Server                      | Mod must be installed on host-and-play servers and dedicated servers to function correctly. |
+| Client, Server              | Mod must be installed for on all sides to function correctly.                               |
+| (No Application Type tags)  | Don't do this, it makes it unclear where the mod should be installed.                       |
+
+### Access Type
+
+"Access Type" tags control mod loading behavior. Only one should be selected at a time.
+
+| Tag Combination          | Purpose                                                                                            |
+| ------------------------ | -------------------------------------------------------------------------------------------------- |
+| (No Access Type tags)    | Legacy compatibility behavior - does the same thing as the Script tag. Don't do this.              |
+| Asset                    | No mod scripts will be loaded.                                                                     |
+| Script                   | Mod scripts will be loaded. Most mods involve some scripts; this is the most commonly used option. |
+| Script (Elevated Access) | Loads mod scripts in [Elevated Access](../../concepts/elevated-access.md) mode.                    |
 
 ## Dependencies
 

@@ -17,10 +17,10 @@ layout:
 ## First, here's a few things to know about Core Keeper modded multiplayer:
 
 * In general, _all players (and the server) should have exactly the same mods installed._&#x20;
-  * Some mods only need to be installed client side (or server side), refer to "Application Type" tags if they exist, if they don't it's up to the mod developer to tell you this somehow - usually in the description text. If it's not 100% clear, just assume it should be on all sides.
+  * Some mods only need to be installed client side (or server side), refer to the mod's "Application Type" tags, if they exist. If they don't, it's up to the mod developer to tell you this somehow - usually in the description text. If it's not 100% clear, just assume it should be on all sides.
   * The easiest way to achieve this is to use **manual mod installation** and for the host to create a zip file of their installed mods and share it with players containing all of the mods they are using.
 * In cases where mods mismatch, the game will give the error message _**"Game version mismatch"**_
-  * If you see this message, make sure your server and client have exactly the same mods and mod versions. Ensure all mods loaded successfully, sometimes one of the mods fails to load on one side.
+  * If you see this message, make sure your server and client have exactly the same mods and mod versions. Ensure all mods loaded successfully by [checking the logs](../troubleshooting.md#check-your-log-files-for-error-messages) - sometimes one of the mods fails to load on one side.
   * Check out the [Troubleshooting page](../troubleshooting.md) for more help with this issue.
 
 ## Next, select your game type:&#x20;

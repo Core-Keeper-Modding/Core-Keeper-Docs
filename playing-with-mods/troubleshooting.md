@@ -5,7 +5,7 @@ description: If you're encountering problems using mods, this page might have th
 # Troubleshooting
 
 {% hint style="info" %}
-TIP: You can use your browser's Find feature (usually `Ctrl`+`F`) to search this page for error messages you've encountered.&#x20;
+TIP: Use your browser's Find feature (usually `Ctrl`+`F`) to search this page for error messages you've encountered.&#x20;
 {% endhint %}
 
 ## Problems and Error Messages
@@ -38,8 +38,8 @@ See below.
 
 The most common cause of this is installing broken or outdated mods.
 
-* If you are playing from Xbox (gamepass), some mods might be crashing, even if they work on PC. Best solution if you want to play with these mods is to get the game on Steam.
 * [#check-your-log-files-for-error-messages](troubleshooting.md#check-your-log-files-for-error-messages "mention")
+* If you are playing from the Xbox Game Pass version, some mods can crash, even if they work on a normal PC install. Best solution if you want to play with these mods is to get the game on Steam.
 * [uninstalling-mods.md](uninstalling-mods.md "mention")  - remove mods until the problem stops to track down what mod was causing the problem.
 * [#ask-for-help-on-the-discord](troubleshooting.md#ask-for-help-on-the-discord "mention")
 * Once you find out what mod in specific is the cause - [reporting-bugs.md](reporting-bugs.md "mention")
@@ -51,7 +51,7 @@ The most common cause of this is installing broken or outdated mods.
 
 ### `Failed to create mod on mod.io: Api failed to complete the request`
 
-* Try [uploading the mod manually](../creating-mods/releasing-mods/mod-files-upload.md)
+* Try [uploading the mod manually](../creating-mods/releasing-mods/mod-files-upload.md).
 
 ### `Command give does not exist!`
 

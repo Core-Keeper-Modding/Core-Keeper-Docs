@@ -38,9 +38,11 @@ For the best results, relaunch your game after installing or removing mods.
 
 Core Launcher is a 3rd party tool that makes it easy to manage mods. Check out its page on GitHub for further directions.
 
-Core Launcher has a [dedicated discussion thread](https://discord.com/channels/851842678340845600/1173510418690490458) on the Core Keeper discord.
+Once you have installed it and set it up, create a Profile with the `+` button to start installing mods.
 
 {% embed url="https://github.com/super-miner/Core-Launcher" %}
+
+Core Launcher has a [dedicated discussion thread](https://discord.com/channels/851842678340845600/1173510418690490458) on the Core Keeper discord.
 
 ***
 
