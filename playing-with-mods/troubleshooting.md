@@ -38,12 +38,13 @@ See below.
 
 The most common cause of this is installing broken or outdated mods.
 
+* If you are playing from Xbox (gamepass), some mods might be crashing, even if they work on PC. Best solution if you want to play with these mods is to get the game on Steam.
 * [#check-your-log-files-for-error-messages](troubleshooting.md#check-your-log-files-for-error-messages "mention")
 * [uninstalling-mods.md](uninstalling-mods.md "mention")  - remove mods until the problem stops to track down what mod was causing the problem.
 * [#ask-for-help-on-the-discord](troubleshooting.md#ask-for-help-on-the-discord "mention")
 * Once you find out what mod in specific is the cause - [reporting-bugs.md](reporting-bugs.md "mention")
 
-### "Mods" menu on title og photscreen does not load (`Failed to Fetch`)
+### "Mods" menu on the title screen does not load (`Failed to Fetch`)
 
 * [#launch-the-game-in-no-mods-mode-then-unsubscribe-from-mods](uninstalling-mods.md#launch-the-game-in-no-mods-mode-then-unsubscribe-from-mods "mention")  - remove mods until the problem stops to track down what mod was causing the problem.
 * [#ask-for-help-on-the-discord](troubleshooting.md#ask-for-help-on-the-discord "mention")
