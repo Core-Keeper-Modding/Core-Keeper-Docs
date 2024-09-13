@@ -22,7 +22,7 @@ Dedicated servers do not have mod.io integration, so mod files must be managed m
 
 1. Download the mods you want from the mod.io website using the Download File button
    * ![](../../.gitbook/assets/image.png)&#x20;
-2. Open the game server installation folder and navigate to the [mods folder](../../concepts/important-folder-paths.md#manually-added-mods):  `<server-install-folder>/Core Keeper/CoreKeeper_Data/StreamingAssets/Mods/`.  You may need to create the `Mods/` folder if it doesn't already exist.
+2. Open the game server installation folder and navigate to the [mods folder](../../concepts/important-folder-paths.md#manually-added-mods):  `<server-install-folder>/CoreKeeperServer_Data/StreamingAssets/Mods/`.  You may need to create the `Mods/` folder if it doesn't already exist.
 3. Unzip each of the mod zips you downloaded inside the folder so that each mod is in its own subfolder.
    * The name of each mod folder does not matter as long as it is unique, but you probably want it to include the name of the mod for later reference.
    * Ensure that each mod subfolder has a `ModManifest.json` file.

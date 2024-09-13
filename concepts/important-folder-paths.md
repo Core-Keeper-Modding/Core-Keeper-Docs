@@ -21,7 +21,7 @@ If you know where to find the Xbox desktop install files, [update the docs](../h
 TODO - do you know where it is? [Add it](../how-to-contribute.md)!
 {% endtab %}
 
-{% tab title="Linux Server" %}
+{% tab title="Dedicated Server" %}
 Placed in same folder as the server executable. No past logs are kept.
 {% endtab %}
 {% endtabs %}
@@ -39,7 +39,7 @@ Placed in same folder as the server executable. No past logs are kept.
 `$HOME/.config/unity3d/Pugstorm/Core Keeper/Steam/<user-id>/saves`
 {% endtab %}
 
-{% tab title="Linux Server" %}
+{% tab title="Dedicated Server" %}
 Not applicable - characters exist client side.
 {% endtab %}
 {% endtabs %}
@@ -55,7 +55,7 @@ Not applicable - characters exist client side.
 `$HOME/.config/unity3d/Pugstorm/Core Keeper/Steam/<user-id>/worlds`
 {% endtab %}
 
-{% tab title="Linux Server" %}
+{% tab title="Dedicated Server" %}
 `/Save/worlds` subfolder of the server install directory.
 {% endtab %}
 {% endtabs %}
@@ -77,7 +77,7 @@ This is where the game's mod.io integration downloads the mods you are subscribe
 TODO - do you know where it is? [Add it](../how-to-contribute.md)!
 {% endtab %}
 
-{% tab title="Linux Server" %}
+{% tab title="Dedicated Server" %}
 Not applicable - servers can't use the mod.io integration. See the [#manually-added-mods](important-folder-paths.md#manually-added-mods "mention") section.
 {% endtab %}
 {% endtabs %}
@@ -106,7 +106,7 @@ C:\Program Files (x86)\Steam\steamapps\common\Core Keeper\CoreKeeper_Data\Stream
 `CoreKeeper_Data\StreamingAssets\Mods` subfolder of your [game install directory](important-folder-paths.md#game-install-directory).
 {% endtab %}
 
-{% tab title="Linux Server" %}
+{% tab title="Dedicated Server" %}
 `CoreKeeperServer_Data\StreamingAssets\Mods` subfolder of the server install directory.
 {% endtab %}
 {% endtabs %}
@@ -122,7 +122,7 @@ C:\Program Files (x86)\Steam\steamapps\common\Core Keeper\CoreKeeper_Data\Stream
 TODO - do you know where it is? [Add it](../how-to-contribute.md)!
 {% endtab %}
 
-{% tab title="Linux Server" %}
+{% tab title="Dedicated Server" %}
 `/Save/mods`subfolder of the server install directory.
 {% endtab %}
 {% endtabs %}
