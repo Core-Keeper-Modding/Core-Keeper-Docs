@@ -32,9 +32,14 @@ Components are structs, which hold component data. However they don't hold any b
 
 Systems hold the actual behavior. They can perform operations of group of components in bulk, utilizing Job Systems and Burst to do so in multi-threaded way
 
-If you are struggling to understand ECS, try [this info-graphic](https://www.reddit.com/r/Unity3D/comments/y6elrw/what\_is\_ecs\_an\_infographic\_to\_understand\_the/) or [this video](https://www.youtube.com/watch?v=71RSWVyOMEY).
-
 Limoka has created an overview of the game's ECS components on mod.io, although it may be out of date: [https://mod.io/g/corekeeper/r/ecs-component-compendium](https://mod.io/g/corekeeper/r/ecs-component-compendium)
+
+Resources:
+
+* [ECS Infographic](https://www.reddit.com/r/Unity3D/comments/y6elrw/what\_is\_ecs\_an\_infographic\_to\_understand\_the/)
+* [Unity ECS Manual](https://docs.unity3d.com/Packages/com.unity.entities@1.3/manual/index.html)
+* ["Building a fast ECS on top of a slow ECS"](https://www.youtube.com/watch?v=71RSWVyOMEY)
+* [Unity Entity Scripting API manual](https://docs.unity3d.com/Packages/com.unity.entities@0.0/api/Unity.Entities.html)
 
 #### Authoring
 
@@ -60,3 +65,8 @@ Ghosts part of the multiplayer client/server communication system. A ghost is a 
 
 {% embed url="https://docs.unity3d.com/Packages/com.unity.netcode@1.0/manual/ghost-snapshots.html" %}
 
+## Harmony <a href="#harmony" id="harmony"></a>
+
+Harmony is a library for patching, replacing and decorating existing classes and methods in the game. The patching is done in runtime, which means you don't have to change the existing code! We use harmony to run our code before or after game methods. This allows us to modify game behavior.
+
+Core Keeper already ships with a version of Harmony included. Any class with the `[HarmonyPatch]` annotation will be used as a patch.
