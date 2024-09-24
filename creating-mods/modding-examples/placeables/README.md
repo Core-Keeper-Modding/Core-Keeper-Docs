@@ -54,6 +54,12 @@ Graphical prefab is a Game Object that represents the entity on screen. It is im
 
 To make a graphical prefab create a new Prefab. On the root of it you need to place a `EntityMonoBehaviour` deriven class.
 
+{% hint style="warning" %}
+Warning: Do NOT use existing classes that derive from EntityMonoBehaviour in your prefabs. You will have issues if you do.\
+\
+If you want to use a specific class, make a new class deriving from it, and use that
+{% endhint %}
+
 Then in the hierarchy create a GameObject called `XScaler`. Then inside of it create two GameObjects: `SpriteObject`, `ShadowSprite` and `particleSpawnLocation`. Optionally you can create GameObject `Interactable`, if your object will need to be interacted with. The resulting prefab should look like this:
 
 <figure><img src="../../../.gitbook/assets/simple-prefab-tree.png" alt=""><figcaption><p>Example graphical prefab</p></figcaption></figure>
