@@ -24,6 +24,8 @@ First, follow the steps in the generic item guide to define the other required p
 
 Set the `Object Type` to `Placeable Prefab`.&#x20;
 
+#### Assigning components
+
 Add following components:
 
 * `Placeable Object Authoring`. This component allows to set various properties of the object. For example here you can make the object take up more than one tile. It also allows to set on what the object can be placed.
@@ -56,11 +58,11 @@ Then in the hierarchy create a GameObject called `XScaler`. Then inside of it cr
 
 <figure><img src="../../../.gitbook/assets/simple-prefab-tree.png" alt=""><figcaption><p>Example graphical prefab</p></figcaption></figure>
 
-On sprite GameObjects add a new component called SpriteObject.
+On sprite GameObjects add a new component called SpriteObject. On the root component assign fields `X Scaler`, `Shadow` and set list Sprite Objects
+
+#### Making the Sprite Asset
 
 Now create two `Sprite Assets` (Create -> 2D -> Sprite Asset), one for main sprite, one for shadow. In the main one assign your main texture, and in the shadow one assign a shadow texture. Now set these Sprite Assets as the `Asset` field on each of the sprites.
-
-On the root component assign fields `X Scaler`, `Shadow` and set list Sprite Objects
 
 <div data-full-width="false">
 
@@ -72,6 +74,8 @@ If you want the object to be rotatable create 3 more static variations: `up` (Wh
 
 <figure><img src="../../../.gitbook/assets/rotation-sa.png" alt="" width="410"><figcaption></figcaption></figure>
 
+#### Intractability
+
 If you want the object to be interactable, on the `Interactable` GameObject a new component `Interactable Object`. Assign field `Entity Mono`, set sprites in `Sprite Objects` field (Except shadow) and wire up Unity Events `On Use Actions` and `On Trigger Exit Actions` to your root component methods. On the root component assign its field `Interactable`.&#x20;
 
 <figure><img src="../../../.gitbook/assets/interactable.png" alt="" width="274"><figcaption><p>Interactable Object</p></figcaption></figure>
@@ -81,6 +85,8 @@ At the end the root of the prefab should look something like this:
 <figure><img src="../../../.gitbook/assets/vp-root.png" alt="" width="274"><figcaption><p>Graphical Prefab Root</p></figcaption></figure>
 
 Once you are done with the prefab, link it to the `Object Authoring` component.
+
+#### Ensure CoreLib knows about the prefab
 
 Also don't forget to add following code to `ModObjectLoaded()` method in order to fix issues caused by lack of pooling support by default: <mark style="color:orange;">(CoreLib)</mark>
 
@@ -93,3 +99,21 @@ if (entityMono != null)
     EntityModule.EnablePooling(gameObject);
 }
 ```
+
+## Troubleshooting
+
+### Nothing appears (Can't find the item)
+
+Firstly ensure that your mod is indeed is loading. For that make your IMod class log this, and look for [logs](../../getting-started-modding/viewing-console-logs.md)
+
+If you have Chat Commands installed try watching logs for a log from CoreLib in a format like this: `objectName -> number`. If you see your name in here, your object is ingame.
+
+You might have some issues with the object name working from Chat Commands, to fix this either add a localized name or try using the number you see in that log message from CoreLib.
+
+### My entity seems to be still present after destruction
+
+This is a known issue that devs could fix, but so far don't. Your only way to solve this is to use CoreLib's Entity module, and it's component `SupportsPooling`.
+
+Ensure you have added this component to your entity prefab, and that the grahpical prefab has a unqiue root script that derives from `EntityMonoBehaviour`. (Note: this script MUST be custom, you CANNOT reuse existing scripts)
+
+Lastly ensure you have done [this](./#ensure-corelib-knows-about-the-prefab)
