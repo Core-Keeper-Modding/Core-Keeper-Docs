@@ -38,6 +38,7 @@ Add following components:
 * `State Authoring`
 * `Idle State Authoring`
 * `Death State Authoring`
+* `Took Damage State Authoring`
 * `Animation Authoring`
 * `Ignore Vertex Offsets`
 
@@ -105,6 +106,10 @@ if (entityMono != null)
     EntityModule.EnablePooling(gameObject);
 }
 ```
+
+Also ensure you have requested CoreLib to be loaded:
+
+Make sure to call `CoreLibMod.LoadModules(typeof(EntityModule));` to in your mod `EarlyInit()` function, before using the module. This will load the submodule.
 
 ## Troubleshooting
 
