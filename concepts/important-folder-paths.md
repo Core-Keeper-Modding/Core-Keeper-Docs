@@ -18,7 +18,7 @@ If you know where to find the Xbox desktop install files, [update the docs](../h
 {% endtab %}
 
 {% tab title="Linux Client" %}
-TODO - do you know where it is? [Add it](../how-to-contribute.md)!
+`$HOME/.config/unity3d/Pugstorm/Core\ Keeper`
 {% endtab %}
 
 {% tab title="Dedicated Server" %}
@@ -74,7 +74,7 @@ This is where the game's mod.io integration downloads the mods you are subscribe
 {% endtab %}
 
 {% tab title="Linux Client" %}
-TODO - do you know where it is? [Add it](../how-to-contribute.md)!
+`$HOME/.config/unity3d/Pugstorm/Core\ Keeper/mod.io/5289`
 {% endtab %}
 
 {% tab title="Dedicated Server" %}
@@ -119,7 +119,7 @@ C:\Program Files (x86)\Steam\steamapps\common\Core Keeper\CoreKeeper_Data\Stream
 {% endtab %}
 
 {% tab title="Linux Client" %}
-TODO - do you know where it is? [Add it](../how-to-contribute.md)!
+`$HOME/.config/unity3d/Pugstorm/Core\ Keeper/Steam/<user-id>/mods`
 {% endtab %}
 
 {% tab title="Dedicated Server" %}
